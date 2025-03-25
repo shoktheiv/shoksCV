@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #111 0%, #414141 100%);
+    background: linear-gradient(135deg, #111 0%, #000000 100%);
     color: white;
     text-align: center;
     position: relative;
@@ -188,10 +188,18 @@ body a, h1, h2, h3, h4, p {
     padding: 5%; /* Adds breathing room */
 }
 
-/* Text Styling */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    z-index: 1;
+}
+
 .hero p {
     font-family: "Sans-Serif", Helvetica;
-    font-size: 5vw; /* Scales proportionally */
 }
 
 /* Responsive Adjustments */
@@ -336,12 +344,6 @@ body a, h1, h2, h3, h4, p {
         font-size: 1.4em; /* Use em for better scaling */
         max-width: 90%;
     }
-    .hero {
-        font-size: 9vw;
-    }
-    .hero p {
-        font-size: 5vw;
-    }
 }
 
 @media (max-width: 768px) {
@@ -365,14 +367,6 @@ body a, h1, h2, h3, h4, p {
     }
     .about-title {
         font-size: 2.5em;
-    }
-
-    .hero {
-        font-size: 10rem;
-        padding: 10%;
-    }
-    .hero p {
-        font-size: 5rem;
     }
 }
 
