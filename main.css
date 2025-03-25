@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #111 0%, #222 100%);
+    background: linear-gradient(135deg, #111 0%, #414141 100%);
     color: white;
     text-align: center;
     position: relative;
@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
+@media (max-width: 768px) {
     .game-page {
         overflow: auto;
         height: auto;
@@ -152,49 +152,28 @@ body a, h1, h2, h3, h4, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    padding: 50px;
+    font-size: 1.5vw; /* Scale text based on viewport width */
+    padding: 5%; /* Responsive padding */
     z-index: 1;
-    width: 60%;
+    max-width: 80%; /* Keeps text readable */
     text-align: center;
-    padding: 20px;
     border-radius: 10px;
-    width: 60%;
     margin: auto;
-    
-    line-height: 1.6; /* Adds better spacing between lines */
-    font-weight: 500; 
+    line-height: 1.6;
+    font-weight: 500;
 }
 
-@media (max-width: 1024px) { /* Tablets */
-    .about-me {
-        font-size: 1.3rem;
-        line-height: 1.6;
-        max-width: 90%;
-    }
-}
+/* Adjustments for smaller screens */
 
-@media (max-width: 768px) { /* Smaller tablets & large phones */
-    .about-me {
-        font-size: 1.1rem;
-        line-height: 1.5;
-        max-width: 95%;
-    }
-}
 
-@media (max-width: 480px) { /* Phones */
-    .about-me {
-        font-size: 1rem;
-        line-height: 1.4;
-        max-width: 100%;
-    }
-}
-
+/* Fix title overlapping issues */
 .about-title {
-    font-size: 3rem;
+    font-size: 5vw; /* Dynamic scaling */
     font-weight: bold;
     margin-bottom: 10px;
     font-family: "Fantasy", copperplate;
+    text-align: center;
+    max-width: 90%;
 }
 
 .hero {
@@ -203,14 +182,19 @@ body a, h1, h2, h3, h4, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    text-align: center; /* Ensures text stays centered */
+    font-size: 4vw; /* Responsive font scaling */
     z-index: 1;
+    padding: 5%; /* Adds breathing room */
 }
 
+/* Text Styling */
 .hero p {
     font-family: "Sans-Serif", Helvetica;
+    font-size: 5vw; /* Scales proportionally */
 }
 
+/* Responsive Adjustments */
 
 .learn-more {
     display: inline-block;
@@ -289,32 +273,39 @@ body a, h1, h2, h3, h4, p {
     }
 }
 .contact {
-    margin-top: 300px;
+    margin-top: 30vh; /* Adjusts dynamically based on screen */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px;
+    padding: 5%;
     z-index: 1;
     background-color: transparent;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Title Styling */
 .contact h2 {
+    font-size: 3vw; /* Responsive size */
+    font-weight: bold;
     margin-bottom: 10px;
-    font-size: 2rem;
 }
 
+/* Text Styling */
 .contact p {
+    font-size: 1.5vw;
     margin-bottom: 15px;
-    font-size: 1.2rem;
 }
 
+/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    font-size: 2rem;
+    gap: 5vw; /* Scales properly */
+    font-size: 3vw;
     margin-top: 10px;
 }
 
@@ -325,4 +316,88 @@ body a, h1, h2, h3, h4, p {
 
 .social-icons a:hover {
     color: #f08080;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact {
+        max-width: 90%;
+    }
+    .contact h2 {
+        font-size: 2rem;
+    }
+    .contact p {
+        font-size: 1.3rem;
+    }
+    .social-icons {
+        font-size: 2rem;
+    }
+    .about-me {
+        font-size: 1.4em; /* Use em for better scaling */
+        max-width: 90%;
+    }
+    .hero {
+        font-size: 9vw;
+    }
+    .hero p {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        max-width: 95%;
+    }
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+    .contact p {
+        font-size: 1.2rem;
+    }
+    .social-icons {
+        font-size: 1.8rem;
+        gap: 15px;
+    }
+    .about-me {
+        font-size: 1.2em;
+        line-height: 1.5;
+        max-width: 95%;
+    }
+    .about-title {
+        font-size: 2.5em;
+    }
+
+    .hero {
+        font-size: 10rem;
+        padding: 10%;
+    }
+    .hero p {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    .contact p {
+        font-size: 1rem;
+    }
+    .social-icons {
+        font-size: 1.5rem;
+        gap: 10px;
+    }
+    .about-me {
+        font-size: 1em;
+        line-height: 1.4;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .about-title {
+        font-size: 2em;
+    }
 }
