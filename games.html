@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - My Website</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body class="game-page">
+    <div id="particles-js"></div>
+
+    <div class="header">
+        <h1 class="site-name">ShokTheIV</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Me</a>
+            <a href="games.html">Games</a>
+            <a href="socials.html">Social Media</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+
+    <!-- Mobile Sliding Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Me</a>
+        <a href="games.html">Games</a>
+        <a href="socials.html">Social Media</a>
+        <a href="javascript:void(0);" onclick="toggleMenu()" style="color: #f08080;">Close ✖</a>
+    </div>
+
+    <!-- Overlay to Dim Background When Menu is Open -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div class="games-section">
+        <div class="game" onclick="window.location.href='https://dashingmortis.itch.io/wizard-but-pew-pew'">
+            <img src="game-1-banner.png" alt="Game 1">
+            <p class="game-title">Wizard But Pew Pew</p>
+        </div>
+        <div class="game" onclick="window.location.href='https://shoktheiv.itch.io/cobra-dash'">
+            <img src="game2-banner.png" alt="Game 2">
+            <p class="game-title">Cobra Dash</p>
+        </div>
+        <div class="game" onclick="window.location.href='https://dashingmortis.itch.io/a-game-made-in-7-hours'">
+            <img src="game3-banner.jpg" alt="Game 3">
+            <p class="game-title">A Game Made In 7 Hours</p>
+        </div>
+    </div>
+    <script src="particles.js"></script>
+</body>
+</html>
+
