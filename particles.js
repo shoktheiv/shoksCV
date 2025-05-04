@@ -6,8 +6,8 @@ particlesJS("particles-js", {
         },
         "color": { "value": "#ffffff" },
         "shape": { "type": "circle" },
-        "opacity": { "value": 0.5, "random": false },
-        "size": { "value": 10, "random": true },
+        "opacity": { "value": 1, "random": false },
+        "size": { "value": 5, "random": true },
         "line_linked": {
             "enable": true,
             "distance": 150,
