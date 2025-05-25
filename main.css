@@ -12,6 +12,9 @@ body {
     text-align: center;
     position: relative;
     width: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 @media (max-width: 768px) {
