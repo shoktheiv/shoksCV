@@ -75,12 +75,51 @@
             text-align: center;
             padding: 10px;
         }
+
+        .itch-embed .game_image,
+        .itch-embed .game_header {
+            display: none !important;
+        }
         
         @media (max-width: 768px) {
             .game-icon {
                 width: 100%;
                 height: auto;
                 max-height: 286px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .itch-embed {
+                height: auto;
+                min-height: 44px;
+                border: 1px solid #333 !important;
+                border-radius: 4px;
+            }
+            
+            .game {
+                padding: 10px;
+            }
+            
+            .itch-embed body {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            .itch-embed .game_header {
+                display: none !important;
+            }
+            
+            .itch-embed .game_text {
+                display: block !important;
+                padding: 10px;
+                color: white !important;
+                font-size: 14px !important;
+            }
+            
+            .itch-embed a {
+                color: #ff4d4d !important;
+                text-decoration: none !important;
             }
         }
 
@@ -119,24 +158,24 @@
         </div>
         
         <div class="game">
-            <div class="game-icon-container"> 
+            <div class="game-icon-container">
                 <img src="https://img.itch.zone/aW1nLzUwNzg2MDgucG5n/360x286%23c/PdBRiw.png" alt="Wizard But Pew Pew" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/899655?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000"></iframe>
+            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/899655?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000&amp;dark=true&amp;hide_image=true"></iframe>
         </div>
         
         <div class="game">
             <div class="game-icon-container">
                 <img src="https://img.itch.zone/aW1nLzIxMjc4NjM2LnBuZw==/360x286%23c/jaQ0o9.png" alt="Dead of Defence" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/3574237?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000"></iframe>
+            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/3574237?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000&amp;dark=true&amp;hide_image=true"></iframe>
         </div>
         
         <div class="game">
             <div class="game-icon-container">
                 <img src="empty-banner.jpg" alt="7 Hour Game" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/781550?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000"></iframe>
+            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/781550?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000&amp;dark=true&amp;hide_image=true"></iframe>
         </div>
         
         <div class="game">
