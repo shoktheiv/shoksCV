@@ -270,13 +270,13 @@ body a, h1, h2, h3, h4, p {
     font-weight: bold;
     color: #ffffff;
 }
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
     .games-section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .games-section {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -396,4 +396,3 @@ body a, h1, h2, h3, h4, p {
         font-size: 2em;
     }
 }
- 
