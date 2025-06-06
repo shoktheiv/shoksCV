@@ -123,6 +123,42 @@
             }
         }
 
+        .projects-section {
+            padding: 50px 20px;
+            background-color: #111;
+            color: white;
+            border-top: 2px solid #fff;
+        }
+
+        .project {
+            background: #000;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 600px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+        }
+
+        .project-title {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .project a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body class="game-page">
@@ -187,6 +223,25 @@
             </div>
         </div>
         
+    </div>
+
+    <div class="projects-section">
+        <h2 style="color: white; text-align: center; margin-bottom: 30px;">Other Projects</h2>
+
+        <div class="project">
+            <h3 class="project-title">Telegram Plays Snake</h3>
+            <p><a href="https://github.com/shoktheiv/telegramPlaysSnake" target="_blank">GitHub Repo</a></p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">Shok's Infinite Chunk Generator</h3>
+            <p><a href="https://github.com/shoktheiv/shoksChunkLoader" target="_blank">GitHub Repo</a></p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">Roguelike With Pure Python</h3>
+            <p><a href="https://github.com/shoktheiv/roguelike-no-libraries" target="_blank">GitHub Repo</a></p>
+        </div>
     </div>
     <script src="particles.js"></script>
 </body>
