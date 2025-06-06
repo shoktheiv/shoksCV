@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -79,40 +78,81 @@ body a, h1, h2, h3, h4, p {
     color: #f08080;
 }
 
-/* Hamburger Menu for Mobile */
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
+@media (max-width: 1100px) {
+    .menu-icon {
+        display: block; /* show hamburger menu */
+    }
+
+    .nav-links {
+        display: none !important; /* hide nav links */
+    }
 }
 
-/* Mobile Menu (Hidden Initially) */
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* Initially off-screen */
-    width: 250px;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    transition: right 0.3s ease-in-out;
+    align-items: flex-start;
+    padding: 30px 20px;
+    transition: right 0.4s ease-in-out;
     z-index: 150;
+    border-left: 2px solid #444;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mobile-menu h3 {
+    color: #f08080;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .mobile-menu a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    transition: color 0.3s;
-    padding: 10px;
+    font-size: 18px;
+    padding: 15px 0;
+    width: 100%;
+    display: inline-block; /* Needed for transform effects */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobile-menu a:hover {
+    background-color: rgba(255, 77, 77, 0.2);
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Close button for mobile menu */
+.mobile-menu .close-btn {
+    align-self: flex-end;
+    font-size: 28px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    transition: color 0.2s;
+}
+
+.mobile-menu .close-btn:hover {
     color: #f08080;
+}
+
+/* Active State */
+.mobile-menu.active {
+    right: 0;
+}
+
+.menu-icon {
+    display: none;
 }
 
 /* Overlay (Fades in When Menu is Open) */
