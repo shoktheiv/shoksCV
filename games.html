@@ -29,14 +29,6 @@
             z-index: -1;
         }
         
-        .itch-embed {
-            width: 100%;
-            height: 167px;
-            border: none !important;
-            background-color: transparent !important; 
-            box-shadow: none !important;
-        }
-        
         .game {
             background: #000000;
             padding: 15px;
@@ -71,16 +63,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
         
-        .coming-soon {
-            text-align: center;
-            padding: 10px;
-        }
-
-        .itch-embed .game_image,
-        .itch-embed .game_header {
-            display: none !important;
-        }
-        
         @media (max-width: 768px) {
             .game-icon {
                 width: 100%;
@@ -89,38 +71,27 @@
             }
         }
 
-        @media (max-width: 900px) {
-            .itch-embed {
-                height: auto;
-                min-height: 44px;
-                border: 1px solid #333 !important;
-                border-radius: 4px;
-            }
-            
-            .game {
-                padding: 10px;
-            }
-            
-            .itch-embed body {
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-            
-            .itch-embed .game_header {
-                display: none !important;
-            }
-            
-            .itch-embed .game_text {
-                display: block !important;
-                padding: 10px;
-                color: white !important;
-                font-size: 14px !important;
-            }
-            
-            .itch-embed a {
-                color: #ff4d4d !important;
-                text-decoration: none !important;
-            }
+        .game-info {
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .game-title a {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .game-title a:hover {
+            text-decoration: underline;
+        }
+
+        .game-description {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #ccc;
         }
 
         .projects-section {
@@ -188,41 +159,87 @@
     <div class="games-section">
         <div class="game">
             <div class="game-icon-container">
-                <img src="https://img.itch.zone/aW1nLzE3NDQyODM0LnBuZw==/360x286%23c/FzmBxu.png" alt="Cobra Dash" class="game-icon">
+                <img src="https://img.itch.zone/aW1nLzIzMDYyODAxLnBuZw==/315x250%23c/yVXdn6.png" alt="GunsOnWheels" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/2915140?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000"></iframe>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://shoktheiv.itch.io/gunsonwheels" target="_blank">GunsOnWheels</a>
+                </h3>
+                <p class="game-description">A game consisting of silly little wheels which have acquired guns... oh no [in production]</p>
+            </div>
         </div>
-        
+
         <div class="game">
             <div class="game-icon-container">
-                <img src="https://img.itch.zone/aW1nLzUwNzg2MDgucG5n/360x286%23c/PdBRiw.png" alt="Wizard But Pew Pew" class="game-icon">
+                <img src="wordlar.png" alt="wordlar" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/899655?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000&amp;dark=true&amp;hide_image=true"></iframe>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://wordlar.uz" target="_blank">Wordlar.uz</a>
+                </h3>
+                <p class="game-description">The Uzbek port for the classic game of Wordle!</p>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="game-icon-container">
+                <img src="https://img.itch.zone/aW1nLzIyOTc2NDIxLnBuZw==/315x250%23c/1RGQUp.png" alt="flog" class="game-icon">
+            </div>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://shoktheiv.itch.io/flog" target="_blank">flog.</a>
+                </h3>
+                <p class="game-description">A 3D minigolf game for the 2025 Brackeys Game Jam</p>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="game-icon-container">
+                <img src="https://img.itch.zone/aW1nLzE3NDQyODM0LnBuZw==/360x286%23c/FzmBxu.png" alt="Cobra Dash" class="game-icon">
+            </div>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://shoktheiv.itch.io/cobra-dash" target="_blank">Cobra Dash</a>
+                </h3>
+                <p class="game-description">Fast-paced snake-like game where you dodge obstacles and collect power-ups.</p>
+            </div>
         </div>
         
         <div class="game">
             <div class="game-icon-container">
                 <img src="https://img.itch.zone/aW1nLzIxMjc4NjM2LnBuZw==/360x286%23c/jaQ0o9.png" alt="Dead of Defence" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/3574237?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000&amp;dark=true&amp;hide_image=true"></iframe>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://shoktheiv.itch.io/dead-of-defence" target="_blank">Dead of Defence</a>
+                </h3>
+                <p class="game-description">A tower-defense style game where you must hold the line against endless waves of enemies.</p>
+            </div>
         </div>
+        <div class="game">
+            <div class="game-icon-container">
+                <img src="https://img.itch.zone/aW1nLzUwNzg2MDgucG5n/360x286%23c/PdBRiw.png" alt="Wizard But Pew Pew" class="game-icon">
+            </div>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://dashingmortis.itch.io/wizard-but-pew-pew" target="_blank">Wizard But Pew Pew</a>
+                </h3>
+                <p class="game-description">Play as a wizard who blasts enemies with rapid-fire spells in a fun arcade shooter.</p>
+            </div>
+        </div>
+        
         
         <div class="game">
             <div class="game-icon-container">
                 <img src="empty-banner.jpg" alt="7 Hour Game" class="game-icon">
             </div>
-            <iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/781550?bg_color=000000&fg_color=ffffff&link_color=ff4d4d&border_color=000000&amp;dark=true&amp;hide_image=true"></iframe>
-        </div>
-        
-        <div class="game">
-            <div class="game-icon-container">
-                <img src="empty-banner.jpg" alt="FurnitureFront" class="game-icon">
-            </div>
-            <div class="coming-soon">
-                <p class="game-title">FurnitureFront [Coming soon...]</p>
+            <div class="game-info">
+                <h3 class="game-title">
+                    <a href="https://dashingmortis.itch.io/a-game-made-in-7-hours" target="_blank">7 Hour Game</a>
+                </h3>
+                <p class="game-description">A fun experiment made in just 7 hours — short, chaotic, and surprisingly addictive.</p>
             </div>
         </div>
-        
     </div>
 
     <div class="projects-section">
